@@ -30,7 +30,7 @@ bit-setup: 1 bit equals to 30 minutes, e.g.:
 
 0x11 = 1.5 hours (jumpper set on pin 4 and 5)
 
-0x101 - 2.5 hours (jupper set on pin 4 and 6)
+0x101 - 2.5 hours (jumpper set on pin 4 and 6)
 
 
 The switch would do a switch off-on action 11 hours after the initial power on - this is to allow people setup the power supply (e.g.) on 2pm in the afternoon, then the first (and every power cycle) action would happen at 1am in the mid-night.
@@ -40,6 +40,8 @@ Usage:
 1. Connect Pin 2 to a relay's input and power it properly.
 
 2. Clone https://github.com/JChristensen/Timer and place it into the libraries folder of your arduino IDE.
+
+3. flash the Arduino Uno as usual then enjoy. :)
 
 This project is tested under arduno 1.8.5. Other version of arduino IDE may also work.
 
