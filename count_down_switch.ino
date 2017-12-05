@@ -58,7 +58,7 @@ void setup()
   Serial.print("LED event started id=");
   Serial.println(ledEvent);
   
-  int afterEvent = t.after(5*1000, slowDownLed_switchOn);
+  int afterEvent = t.after(switch_seconds*1000, slowDownLed_switchOn);
   Serial.print("After event started id=");
   Serial.println(afterEvent); 
 
@@ -124,7 +124,7 @@ void doCountDown()
     readConfig();
 
     //slow down led to indicate normal operation after 5 seconds and switch On
-    t.after(5*1000, slowDownLed_switchOn);
+    t.after(switch_seconds*1000, slowDownLed_switchOn);
 
   }
 }
